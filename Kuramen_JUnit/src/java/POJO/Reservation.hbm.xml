@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 11, 2022 12:56:10 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Reservation" table="reservation" catalog="kuramen" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nama" type="string">
+            <column name="nama" length="50" not-null="true" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="50" not-null="true" />
+        </property>
+        <property name="jk" type="string">
+            <column name="jk" length="50" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true" />
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="50" not-null="true" />
+        </property>
+        <property name="hour" type="string">
+            <column name="hour" length="50" not-null="true" />
+        </property>
+        <property name="orang" type="string">
+            <column name="orang" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
